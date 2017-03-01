@@ -89,7 +89,8 @@ main.page-content{
 .img-wrap img{
   display: inline-block;
   width:100%;
-  max-width:400px;
+  position: relative;
+  bottom:-10px;
 }
 @media(max-width:960px){
   main.page-content{
