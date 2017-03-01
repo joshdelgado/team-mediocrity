@@ -12,14 +12,19 @@ html,body,main.page-content{
   padding:0;
   overflow:hidden;
 }
-main.page-content{
+body{
   background-image: url(../images/rl-bg.png);
   background-size: cover;
+}
+main.page-content{
+  background-color: rgba(0,0,0,0.5);
+  color:#f0f0f0;
   font-family: 'Montserrat', helvetica, arial, sans-serif;
   h1{
     font-weight:900;
     font-size:3.14rem;
     line-height: 1em;
+    letter-spacing: 1px;
     margin:0 0 0.5rem;
   }
   p{
@@ -31,7 +36,7 @@ main.page-content{
   padding:0;
   li{
     display: inline-block;
-    padding:0 10px;
+    margin:0 10px;
     img{
       opacity:1;
       -webkit-transition: all 0.35s ease;
@@ -40,18 +45,11 @@ main.page-content{
   }
   li:hover{
     img{
-      opacity:1 !important;
+      opacity:0.5;
     }
   }
   li:last-child{
-    padding-right:0;
-  }
-}
-.social-links:hover{
-  li{
-    img{
-      opacity:0.35;
-    }
+    margin-right:0;
   }
 }
 .wrapper{
@@ -81,18 +79,26 @@ main.page-content{
   text-align: center;
 }
 .left-col{
+  padding-bottom:200px;
   text-align: right;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-top:100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .img-wrap img{
   display: inline-block;
   width:100%;
+  max-width:90%;
   position: relative;
   bottom:-10px;
 }
-@media(max-width:960px){
+
+@media(max-width:1200px){
+  .left-col{
+    padding-bottom:100px;
+  }
+}
+@media(max-width:1060px){
   main.page-content{
     p{
       padding:0 0 .5rem 0;
@@ -111,9 +117,14 @@ main.page-content{
   }
   .social-links{
     li:last-child{
-      padding:0 10px;
+      margin:0 10px;
     }
   }
+  .img-wrap img{
+    width:400px;
+  }
+}
+@media(max-width:800px){
   .img-wrap img{
     width:300px;
   }
