@@ -1,0 +1,129 @@
+---
+---
+*{
+  box-sizing: border-box;
+}
+html,body,main.page-content{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding:0;
+  overflow:hidden;
+}
+main.page-content{
+  background-image: url(../images/rl-bg.png);
+  background-size: cover;
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  h1{
+    font-weight:900;
+    font-size:3.14rem;
+    line-height: 1em;
+    margin:0 0 0.5rem;
+  }
+  p{
+    padding:0 0 1.5rem 0;
+  }
+}
+.social-links{
+  list-style: none;
+  padding:0;
+  li{
+    display: inline-block;
+    padding:0 10px;
+    img{
+      opacity:1;
+      -webkit-transition: all 0.35s ease;
+      transition:all 0.35s ease;
+    }
+  }
+  li:hover{
+    img{
+      opacity:1 !important;
+    }
+  }
+  li:last-child{
+    padding-right:0;
+  }
+}
+.social-links:hover{
+  li{
+    img{
+      opacity:0.35;
+    }
+  }
+}
+.wrapper{
+  height:100%;
+  width:100%;
+  padding:0 50px;
+  max-width:1280px;
+}
+.flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.left-col,
+.right-col{
+  width:47.5%;
+}
+.right-col{
+  text-align: center;
+}
+.left-col{
+  text-align: right;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top:100px;
+}
+.img-wrap img{
+  display: inline-block;
+  width:100%;
+  max-width:400px;
+}
+@media(max-width:960px){
+  main.page-content{
+    p{
+      padding:0 0 .5rem 0;
+    }
+  }
+  .wrapper{
+    padding:20px 20px 0;
+  }
+  .left-col,
+  .right-col{
+    width:100%;
+    text-align: center;
+  }
+  .left-col{
+    padding-top:50px;
+  }
+  .social-links{
+    li:last-child{
+      padding:0 10px;
+    }
+  }
+  .img-wrap img{
+    width:300px;
+  }
+}
+@media (max-width:600px){
+  main.page-content{
+    h1{
+      font-size:2.5rem;
+    }
+  }
+  .left-col{
+    padding-top: 20px;
+  }
+}

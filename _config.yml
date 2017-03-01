@@ -15,12 +15,16 @@
 # in the templates via {{ site.myvariable }}.
 title: Team Mediocrity
 email: wearemediocrity@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  We play Rocket League. We're alright. Xbox: MikeFromFlorida. Ps4: JDisLawlz. PC: Team_Mediocrity
+description: We play Rocket League. We're alright.
+gaming_tags: Xbox&#58; MikeFromFlorida. Ps4&#58; JDisLawlz. PC&#58; Team_Mediocrity
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.wearemediocrity.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: wearemediocrity
 github_username:  joshdelgado
+youtube_link: https://www.youtube.com/channel/UCzya8YMwayLNbuqW-xgPaOw
+instagram_link: https://www.instagram.com/wearemediocrity/
+twitter_link: https://twitter.com/wearemediocrity
+twitch_link: https://www.twitch.tv/wearemediocrity
+facebook_link: https://www.facebook.com/Team-Mediocrity-389119288120112
 
 # Build settings
 markdown: kramdown
